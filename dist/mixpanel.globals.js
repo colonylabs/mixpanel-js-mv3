@@ -4587,6 +4587,8 @@
                                 }
                             }
                         }
+                    }).catch(() => {
+                        console.error("Failed to send request to Mixpanel")
                     });
             } catch (e) {
                 lib.report_error(e);
